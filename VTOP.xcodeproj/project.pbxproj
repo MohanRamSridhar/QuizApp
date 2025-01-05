@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4318FD7B2D0D4EF6008B258B /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 4318FD7A2D0D4EF6008B258B /* GoogleGenerativeAI */; };
+		43C5337E2D2AFF17007028EC /* ConcentricOnboarding in Frameworks */ = {isa = PBXBuildFile; productRef = 43C5337D2D2AFF17007028EC /* ConcentricOnboarding */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4318FD7B2D0D4EF6008B258B /* GoogleGenerativeAI in Frameworks */,
+				43C5337E2D2AFF17007028EC /* ConcentricOnboarding in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +98,7 @@
 				4318FD3F2D0CA24B008B258B /* VTOP */,
 				4318FD502D0CA24E008B258B /* VTOPTests */,
 				4318FD5A2D0CA24E008B258B /* VTOPUITests */,
+				43C5337C2D2AFF17007028EC /* Frameworks */,
 				4318FD3E2D0CA24B008B258B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +111,13 @@
 				4318FD572D0CA24E008B258B /* VTOPUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		43C5337C2D2AFF17007028EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +141,7 @@
 			name = VTOP;
 			packageProductDependencies = (
 				4318FD7A2D0D4EF6008B258B /* GoogleGenerativeAI */,
+				43C5337D2D2AFF17007028EC /* ConcentricOnboarding */,
 			);
 			productName = VTOP;
 			productReference = 4318FD3D2D0CA24B008B258B /* VTOP.app */;
@@ -216,6 +227,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				4318FD792D0D4EA7008B258B /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				43C5337B2D2AFF06007028EC /* XCRemoteSwiftPackageReference "ConcentricOnboarding" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4318FD3E2D0CA24B008B258B /* Products */;
@@ -592,6 +604,14 @@
 				minimumVersion = 0.5.6;
 			};
 		};
+		43C5337B2D2AFF06007028EC /* XCRemoteSwiftPackageReference "ConcentricOnboarding" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ConcentricOnboarding.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -599,6 +619,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4318FD792D0D4EA7008B258B /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
 			productName = GoogleGenerativeAI;
+		};
+		43C5337D2D2AFF17007028EC /* ConcentricOnboarding */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43C5337B2D2AFF06007028EC /* XCRemoteSwiftPackageReference "ConcentricOnboarding" */;
+			productName = ConcentricOnboarding;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
