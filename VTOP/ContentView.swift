@@ -118,18 +118,6 @@ struct ContentView: View {
 
                 VStack(spacing: 20) {
 
-                    Text("Generate and answer programming questions to test your skills.")
-                        .font(.headline)
-                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal)
-
-                    Text("1. Select or search for a programming language from the home screen.\n2. Click 'Generate Questions' to start the quiz.\n3. Swipe the cards left or right to answer 'True' or 'False'.\n4. Check your score and try again to improve!")
-                        .font(.headline)
-                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                        .multilineTextAlignment(.leading)
-                        .padding(.horizontal)
-
                     VStack(spacing: 10) {
                         HStack {
                             Image(systemName: "magnifyingglass")
