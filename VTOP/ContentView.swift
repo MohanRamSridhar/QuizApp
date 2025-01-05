@@ -7,6 +7,7 @@
 
 import GoogleGenerativeAI
 import SwiftUI
+import ConcentricOnboarding
 
 enum APIKey {
     static var `default`: String {
@@ -58,6 +59,22 @@ struct customViewModifier: ViewModifier {
             .padding(3)
             .foregroundColor(textColor)
             .font(.custom("Open Sans", size: 18))
+    }
+}
+
+struct OnBoardView: View {
+
+    var onComplete: () -> Void
+
+    var body: some View {
+        ConcentricOnboardingView(
+            pageContents: MockData.pages.map { (PageView(page: $0), $0.color) }
+        )
+        .duration(0.5)
+        .nextIcon("chevron.forward")
+        .insteadOfCyclingToFirstPage {
+            onComplete()
+        }
     }
 }
 
