@@ -66,8 +66,7 @@ struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var selectedLanguage: String = ""
     @State private var showGameView: Bool = false
-    @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding: Bool = false
-    
+
     let allLanguages = [
         "Java", "Python", "C++", "C", "SQL", "HTML", "JavaScript",
         "TypeScript", "Kotlin", "Swift", "Ruby", "PHP", "Go", "R",
@@ -79,20 +78,8 @@ struct ContentView: View {
         guard !selectedLanguage.isEmpty else { return allLanguages }
         return allLanguages.filter { $0.lowercased().hasPrefix(selectedLanguage.lowercased()) }
     }
-    
-    var body: some View {
-        if hasSeenOnboarding {
-            mainContentView
-        } else {
-            OnBoardView {
-                withAnimation {
-                    hasSeenOnboarding = true
-                }
-            }
-        }
-    }
 
-    var mainContentView: some View {
+    var body: some View {
         NavigationStack {
             ZStack {
                 LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.3), Color.purple.opacity(0.6)]),
