@@ -109,7 +109,7 @@ struct ContentView: View {
         }
     }
 
-    var body: some View {
+    var mainContentView: some View {
         NavigationStack {
             ZStack {
                 LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.3), Color.purple.opacity(0.6)]),
