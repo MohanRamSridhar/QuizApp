@@ -44,7 +44,7 @@ struct FAQView: View {
                 }
                 
                 // Footer
-                Text("Made with ❤️ Mohan Ram Sridhar")
+                Text("Made with ❤️ by Mohan Ram Sridhar")
                     .font(.footnote)
                     .foregroundColor(.secondary)
                     .padding(.top, 10)

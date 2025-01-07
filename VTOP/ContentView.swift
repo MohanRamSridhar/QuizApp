@@ -86,10 +86,10 @@ struct ContentView: View {
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding: Bool = false
 
     let allLanguages = [
-        "Java", "Python", "C++", "C", "SQL", "HTML", "JavaScript",
-        "TypeScript", "Kotlin", "Swift", "Ruby", "PHP", "Go", "R",
-        "Perl", "Rust", "Dart", "Scala", "Clojure", "Haskell", "MATLAB",
-        "Objective-C", "Shell", "Assembly", "Lua", "Visual Basic"
+        "Java", "C++", "C", "SQL", "HTML", "JavaScript",
+        "TypeScript", "Swift", "Ruby", "PHP", "Go",
+        "Perl", "Rust", "Dart", "Clojure", "MATLAB",
+        "Objective-C", "Assembly", "Lua", "Visual Basic"
     ]
 
     var filteredLanguages: [String] {

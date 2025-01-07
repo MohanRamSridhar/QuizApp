@@ -20,33 +20,33 @@ struct PageData {
 struct MockData {
     static let pages: [PageData] = [
         PageData(
-            title: "Eating grapes 101",
+            title: "Getting Started",
             header: "Step 1",
-            content: "Break off a branch holding a few grapes and lay it on your plate.",
+            content: "Select the language you want to take a quiz in from the available options.",
             imageName: "screen 1",
             color: Color(hex: "9B5DE5"), // Vibrant purple
             textColor: Color(hex: "FFFFFF") // White for contrast
         ),
         PageData(
-            title: "Eating grapes 101",
+            title: "Getting Started",
             header: "Step 2",
-            content: "Put a grape in your mouth whole.",
+            content: "If your answer is 'True,' swipe right. If you think the answer is 'False,' swipe left.",
             imageName: "screen 2",
             color: Color(hex: "C4A6E7"), // Light purple
             textColor: Color(hex: "4A4A4A") // Dark gray for readability
         ),
         PageData(
-            title: "Eating grapes 101",
+            title: "Getting Started",
             header: "Step 3",
-            content: "Deposit the seeds into your thumb and first two fingers.",
+            content: "Complete the quiz and discover how strong your skills are in the selected language.",
             imageName: "screen 3",
             color: Color(hex: "D8B4E2"), // Softer pastel purple
             textColor: Color(hex: "4A4A4A") // Dark gray for readability
         ),
         PageData(
-            title: "Eating grapes 101",
-            header: "Step 4",
-            content: "Place the seeds on your plate.",
+            title: "Getting Started",
+            header: "More",
+            content: "For more information, check the FAQ page.",
             imageName: "screen 4",
             color: Color(hex: "E9C6F3"), // Very light purple
             textColor: Color(hex: "4A4A4A") // Dark gray for readability
